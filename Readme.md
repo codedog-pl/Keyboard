@@ -210,7 +210,7 @@ the demo, step by step.
     with the line content copied is just `keyboard.edit()`.
     Notice how `keyboard.targets()` which editable line
     triggered the apply event.
-    For the demonstration puproses we just copy the `Unicode`
+    For the demonstration purposes we just copy the `Unicode`
     line bufffers to the corresponding temporary `UTF8` buffers.
     Double check that the buffer sizes are sufficient to fit
     the texts.
