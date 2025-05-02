@@ -69,7 +69,7 @@ DemoViewBase::DemoViewBase() :
 
     add(content);
 
-    keyboard.setXY(704, 250);
+    keyboard.setXY(1, 286);
     keyboard.setCanceledCallback(keyboardCanceledCallback);
     keyboard.setAppliedCallback(keyboardAppliedCallback);
     keyboard.setKeyPressedCallback(keyboardKeyPressedCallback);

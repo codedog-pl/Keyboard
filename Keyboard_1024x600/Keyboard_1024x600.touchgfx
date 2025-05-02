@@ -200,8 +200,8 @@
           {
             "Type": "CustomContainerInstance",
             "Name": "keyboard",
-            "X": 704,
-            "Y": 250,
+            "X": 1,
+            "Y": 286,
             "Width": 320,
             "Height": 200,
             "CustomContainerDefinitionName": "Keyboard"
