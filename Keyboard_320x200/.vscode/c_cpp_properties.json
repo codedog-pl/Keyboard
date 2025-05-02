@@ -1,0 +1,58 @@
+{
+    "env": {
+        "arm-gnu-toolchain": "d:/arm/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi",
+        "arm-gnu-toolchain-v": "13.3.1",
+        "arm-gnu-toolchain-t": "arm-none-eabi",
+        "arm-gnu-toolchain-f": "v7e-m+dp/hard"
+    },
+    "configurations": [
+        {
+            "name": "STM32U5G9",
+            "includePath": [
+                "${arm-gnu-toolchain}/arm-none-eabi/include",
+                "${arm-gnu-toolchain}/lib/gcc/arm-none-eabi/${arm-gnu-toolchain-v}/include",
+                "${arm-gnu-toolchain}/lib/gcc/arm-none-eabi/${arm-gnu-toolchain-v}/include-fixed",
+                "${arm-gnu-toolchain}/arm-none-eabi/include/c++/${arm-gnu-toolchain-v}",
+                "${arm-gnu-toolchain}/arm-none-eabi/include/c++/${arm-gnu-toolchain-v}/arm-none-eabi",
+                "${arm-gnu-toolchain}/arm-none-eabi/include/c++/${arm-gnu-toolchain-v}/arm-none-eabi/thumb/${arm-gnu-toolchain-f}",
+
+                "${workspaceFolder}/touchgfx/framework/include",
+                "${workspaceFolder}/gui/include",
+                "${workspaceFolder}/generated/fonts/include",
+                "${workspaceFolder}/generated/gui_generated/include",
+                "${workspaceFolder}/generated/images/include",
+                "${workspaceFolder}/generated/texts/include",
+                "${workspaceFolder}/generated/videos/include",
+                "${workspaceFolder}/generated"
+            ],
+            "defines": [
+                "STM32U5G9xx",
+                "USE_HAL_DRIVER",
+                "TX_INCLUDE_USER_DEFINE_FILE",
+                "TX_SINGLE_MODE_NON_SECURE=1",
+                "FX_INCLUDE_USER_DEFINE_FILE",
+                "UX_INCLUDE_USER_DEFINE_FILE",
+                "__weak=__attribute__((weak))",
+                "__packed=__attribute__((__packed__))",
+                "__FPU_PRESENT=1U",
+                "DEVICE=1",
+                "DEBUG"
+            ],
+            "compilerPath": "d:/arm/arm-gnu-toolchain-12.3.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-g++.exe",
+            "compilerArgs": [
+                "-mcpu=cortex-m33",
+                "-mthumb",
+                "-mfpu=fpv5-sp-d16",
+                "-mfloat-abi=hard"
+            ],
+            "cStandard": "c11",
+            "cppStandard": "c++11",
+            "intelliSenseMode": "gcc-arm",
+            "browse": {
+                "limitSymbolsToIncludedHeaders": false
+            },
+            "mergeConfigurations": true
+        }
+    ],
+    "version": 4
+}

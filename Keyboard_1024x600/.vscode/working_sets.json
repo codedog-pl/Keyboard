@@ -1,0 +1,28 @@
+[
+  {
+    "id": "419e17517e592252c22d8f8ff94482eb",
+    "label": "Configuration",
+    "collapsibleState": 2,
+    "filePaths": [
+      "d:\\Source\\CodeDog\\Products\\GMD_H757_Riverdi\\Configuration\\app_conf.h",
+      "d:\\Source\\CodeDog\\Products\\GMD_H757_Riverdi\\Configuration\\pins_conf.h",
+      "d:\\Source\\CodeDog\\Products\\GMD_H757_Riverdi\\Configuration\\pins_conf.c",
+      "d:\\Source\\CodeDog\\Products\\GMD_H757_Riverdi\\Configuration\\timers_conf.h",
+      "d:\\Source\\CodeDog\\Products\\GMD_H757_Riverdi\\Configuration\\timers_conf.c",
+      "d:\\Source\\CodeDog\\Products\\GMD_H757_Riverdi\\Configuration\\target.h"
+    ]
+  },
+  {
+    "id": "aa712897bc3c0f12ba8500114e521fb0",
+    "label": "Result list UI",
+    "collapsibleState": 1,
+    "filePaths": [
+      "d:\\Source\\CodeDog\\Products\\GMD_H757_Riverdi\\CM7\\TouchGFX\\gui\\include\\gui\\results_screen\\ResultsPresenter.hpp",
+      "d:\\Source\\CodeDog\\Products\\GMD_H757_Riverdi\\CM7\\TouchGFX\\gui\\src\\results_screen\\ResultsPresenter.cpp",
+      "d:\\Source\\CodeDog\\Products\\GMD_H757_Riverdi\\CM7\\TouchGFX\\gui\\include\\gui\\results_screen\\ResultsView.hpp",
+      "d:\\Source\\CodeDog\\Products\\GMD_H757_Riverdi\\CM7\\TouchGFX\\gui\\src\\results_screen\\ResultsView.cpp",
+      "d:\\Source\\CodeDog\\Products\\GMD_H757_Riverdi\\CM7\\TouchGFX\\gui\\include\\gui\\containers\\ResultItem.hpp",
+      "d:\\Source\\CodeDog\\Products\\GMD_H757_Riverdi\\CM7\\TouchGFX\\gui\\src\\containers\\ResultItem.cpp"
+    ]
+  }
+]

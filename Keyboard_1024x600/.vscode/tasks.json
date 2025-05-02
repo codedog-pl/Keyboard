@@ -1,0 +1,72 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Tests",
+            "type": "process",
+            "command": "${env:msvc}\\bin\\Hostx64\\x64\\cl.exe",
+            "options": {
+                "env": {
+                    "tests" : "${workspaceFolder}/Tests",
+                    "tests_build" : "${workspaceFolder}/Tests/build",
+                }
+            },
+            "args": [
+                "/nologo",
+                "/Zi",
+                "/EHsc",
+                "/DHAL_HEADER=\"HAL_GPIO_mockup.h\"",
+                "/DTEST",
+                "/std:c++17",
+
+                "/I", "${env:msvc}/include",
+                "/I", "${env:msvc}/ATLMFC/include",
+                "/I", "${env:msvc_aux}",
+                "/I", "${env:winsdk_headers}/ucrt",
+                "/I", "${env:winsdk_headers}/um",
+                "/I", "${env:winsdk_headers}/shared",
+                "/I", "${env:winsdk_headers}/winrt",
+                "/I", "${env:winsdk_headers}/cppwinrt",
+                "/I", "${env:catch2_include}",
+
+                // "/I", "${workspaceFolder}/Drivers/HAL_EX",
+                "/I", "${workspaceFolder}/Tools",
+                "/I", "${workspaceFolder}/Tools/c",
+                "/I", "${workspaceFolder}/Tests",
+                "/I", "${workspaceFolder}/Tests/Helpers",
+
+                "/Fo${workspaceFolder}/Tests/build/",
+                "/Fd${workspaceFolder}/Tests/build/vc140.pdb",
+
+                // "${workspaceFolder}/Drivers/HAL_EX/hal_ex_gpio.c",
+                // "${workspaceFolder}/Tools/ConfigParser.cpp",
+
+                "${workspaceFolder}/Tests/main.cpp",
+                "${workspaceFolder}/Tests/test_libs.cpp",
+
+                "/link",
+                "/OUT:${workspaceFolder}/Tests/build/test_runner.exe",
+                "/LIBPATH:${env:msvc}/ATLMFC/lib/x64",
+                "/LIBPATH:${env:msvc}/lib/x64",
+                "/LIBPATH:${env:winsdk_libs}/ucrt/x64",
+                "/LIBPATH:${env:winsdk_libs}/um/x64",
+                "/LIBPATH:${env:catch2_lib}",
+                "catch2.lib"
+            ],
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Run Tests",
+            "type": "shell",
+            "command": "${workspaceFolder}/Tests/build/test_runner.exe", // Replace with the actual path to your test runner executable
+            "dependsOn": ["Build Tests"],
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            }
+        }
+    ]
+}

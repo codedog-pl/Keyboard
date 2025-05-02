@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextDatabase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="texts.xsd" Version="4.25.0">
+  <Languages>
+    <Language Id="GB" />
+  </Languages>
+  <Texts>
+    <TextGroup Id="Group1" />
+    <TextGroup Id="Keyboard">
+      <Text Id="KEY_VALUE" Alignment="Center" TypographyId="Keyboard">
+        <Translation Language="GB">&lt;k&gt;</Translation>
+      </Text>
+      <Text Id="KEY01" Alignment="Left" TypographyId="Keyboard">
+        <Translation Language="GB">1</Translation>
+      </Text>
+      <Text Id="KEY02" Alignment="Left" TypographyId="Keyboard">
+        <Translation Language="GB">2</Translation>
+      </Text>
+      <Text Id="KEY03" Alignment="Left" TypographyId="Keyboard">
+        <Translation Language="GB">3</Translation>
+      </Text>
+      <Text Id="KEY04" Alignment="Left" TypographyId="Keyboard">
+        <Translation Language="GB">4</Translation>
+      </Text>
+      <Text Id="KEY05" Alignment="Left" TypographyId="Keyboard">
+        <Translation Language="GB">5</Translation>
+      </Text>
+      <Text Id="KEY06" Alignment="Left" TypographyId="Keyboard">
+        <Translation Language="GB">6</Translation>
+      </Text>
+      <Text Id="KEY07" Alignment="Left" TypographyId="Keyboard">
+        <Translation Language="GB">7</Translation>
+      </Text>
+      <Text Id="KEY08" Alignment="Left" TypographyId="Keyboard">
+        <Translation Language="GB">8</Translation>
+      </Text>
+      <Text Id="KEY09" Alignment="Left" TypographyId="Keyboard">
+        <Translation Language="GB">9</Translation>
+      </Text>
+      <Text Id="KEY10" Alignment="Left" TypographyId="Keyboard">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="KEY11" Alignment="Center" TypographyId="Keyboard">
+        <Translation Language="GB">←</Translation>
+      </Text>
+      <Text Id="KEY12" Alignment="Left" TypographyId="Keyboard">
+        <Translation Language="GB">q</Translation>
+      </Text>
+      <Text Id="KEY13" Alignment="Left" TypographyId="Keyboard">
+        <Translation Language="GB">w</Translation>
+      </Text>
+      <Text Id="KEY14" Alignment="Left" TypographyId="Keyboard">
+        <Translation Language="GB">e</Translation>
+      </Text>
+      <Text Id="KEY15" Alignment="Left" TypographyId="Keyboard">
+        <Translation Language="GB">r</Translation>
+      </Text>
+      <Text Id="KEY16" Alignment="Left" TypographyId="Keyboard">
+        <Translation Language="GB">t</Translation>
+      </Text>
+      <Text Id="KEY17" Alignment="Left" TypographyId="Keyboard">
+        <Translation Language="GB">y</Translation>
+      </Text>
+      <Text Id="KEY18" Alignment="Left" TypographyId="Keyboard">
+        <Translation Language="GB">u</Translation>
+      </Text>
+      <Text Id="KEY19" Alignment="Left" TypographyId="Keyboard">
+        <Translation Language="GB">i</Translation>
+      </Text>
+      <Text Id="KEY20" Alignment="Left" TypographyId="Keyboard">
+        <Translation Language="GB">o</Translation>
+      </Text>
+      <Text Id="KEY21" Alignment="Left" TypographyId="Keyboard">
+        <Translation Language="GB">p</Translation>
+      </Text>
+      <Text Id="KEY22" Alignment="Left" TypographyId="Keyboard">
+        <Translation Language="GB">-</Translation>
+      </Text>
+      <Text Id="KEY23" Alignment="Left" TypographyId="Keyboard">
+        <Translation Language="GB">a</Translation>
+      </Text>
+      <Text Id="KEY24" Alignment="Left" TypographyId="Keyboard">
+        <Translation Language="GB">s</Translation>
+      </Text>
+      <Text Id="KEY25" Alignment="Left" TypographyId="Keyboard">
+        <Translation Language="GB">d</Translation>
+      </Text>
+      <Text Id="KEY26" Alignment="Left" TypographyId="Keyboard">
+        <Translation Language="GB">f</Translation>
+      </Text>
+      <Text Id="KEY27" Alignment="Left" TypographyId="Keyboard">
+        <Translation Language="GB">g</Translation>
+      </Text>
+      <Text Id="KEY28" Alignment="Left" TypographyId="Keyboard">
+        <Translation Language="GB">h</Translation>
+      </Text>
+      <Text Id="KEY29" Alignment="Left" TypographyId="Keyboard">
+        <Translation Language="GB">j</Translation>
+      </Text>
+      <Text Id="KEY30" Alignment="Left" TypographyId="Keyboard">
+        <Translation Language="GB">k</Translation>
+      </Text>
+      <Text Id="KEY31" Alignment="Left" TypographyId="Keyboard">
+        <Translation Language="GB">l</Translation>
+      </Text>
+      <Text Id="KEY32" Alignment="Left" TypographyId="Keyboard">
+        <Translation Language="GB">(</Translation>
+      </Text>
+      <Text Id="KEY33" Alignment="Left" TypographyId="Keyboard">
+        <Translation Language="GB">)</Translation>
+      </Text>
+      <Text Id="KEY34" Alignment="Center" TypographyId="Keyboard">
+        <Translation Language="GB">⇧</Translation>
+      </Text>
+      <Text Id="KEY35" Alignment="Left" TypographyId="Keyboard">
+        <Translation Language="GB">z</Translation>
+      </Text>
+      <Text Id="KEY36" Alignment="Left" TypographyId="Keyboard">
+        <Translation Language="GB">x</Translation>
+      </Text>
+      <Text Id="KEY37" Alignment="Left" TypographyId="Keyboard">
+        <Translation Language="GB">c</Translation>
+      </Text>
+      <Text Id="KEY38" Alignment="Left" TypographyId="Keyboard">
+        <Translation Language="GB">v</Translation>
+      </Text>
+      <Text Id="KEY39" Alignment="Left" TypographyId="Keyboard">
+        <Translation Language="GB">b</Translation>
+      </Text>
+      <Text Id="KEY40" Alignment="Left" TypographyId="Keyboard">
+        <Translation Language="GB">n</Translation>
+      </Text>
+      <Text Id="KEY41" Alignment="Left" TypographyId="Keyboard">
+        <Translation Language="GB">m</Translation>
+      </Text>
+      <Text Id="KEY42" Alignment="Left" TypographyId="Keyboard">
+        <Translation Language="GB">,</Translation>
+      </Text>
+      <Text Id="KEY43" Alignment="Left" TypographyId="Keyboard">
+        <Translation Language="GB">.</Translation>
+      </Text>
+      <Text Id="KEY44" Alignment="Center" TypographyId="Keyboard">
+        <Translation Language="GB">⇧</Translation>
+      </Text>
+      <Text Id="KEY45" Alignment="Center" TypographyId="Keyboard">
+        <Translation Language="GB">Esc</Translation>
+      </Text>
+      <Text Id="KEY47" Alignment="Left" TypographyId="Keyboard">
+        <Translation Language="GB">@</Translation>
+      </Text>
+      <Text Id="KEY48" Alignment="Left" TypographyId="Keyboard">
+        <Translation Language="GB">#</Translation>
+      </Text>
+      <Text Id="KEY49" Alignment="Center" TypographyId="Keyboard">
+        <Translation Language="GB">↵</Translation>
+      </Text>
+      <Text Id="KEYBOARD_TEXT_PLACEHOLDER" Alignment="Left" TypographyId="Keyboard">
+        <Translation Language="GB">[New Text]</Translation>
+      </Text>
+      <Text Id="KEYBOARD_WILDCARD" Alignment="Left" TypographyId="Keyboard">
+        <Translation Language="GB">&lt;v&gt;</Translation>
+      </Text>
+    </TextGroup>
+    <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_R31F" Alignment="Left" TypographyId="Keyboard">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_WHXN" Alignment="Left" TypographyId="Keyboard">
+        <Translation Language="GB">&lt;line2&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_JZ7J" Alignment="Left" TypographyId="Keyboard">
+        <Translation Language="GB"></Translation>
+      </Text>
+      <Text Id="__SingleUse_IZ15" Alignment="Left" TypographyId="Keyboard">
+        <Translation Language="GB">&lt;line1&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_GERV" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">Keyboard (c) 2025 by CodeDog</Translation>
+      </Text>
+      <Text Id="__SingleUse_90VQ" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">E-mail</Translation>
+      </Text>
+      <Text Id="__SingleUse_54MS" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Name</Translation>
+      </Text>
+    </TextGroup>
+  </Texts>
+  <Typographies>
+    <Typography Id="Default" Font="verdanab.ttf" Size="24" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Large" Font="verdanab.ttf" Size="40" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Small" Font="segoeui.ttf" Size="10" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Keyboard" Font="DejaVuSansMono.ttf" Size="40" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacters=" @#%-+()[],.;:/&quot;" WildcardCharacterRanges="0-9,A-Z,a-z" />
+  </Typographies>
+</TextDatabase>
