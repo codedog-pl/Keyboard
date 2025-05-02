@@ -8,6 +8,8 @@
 
 ## Introduction
 
+![image](Readme/Screenshot.png)
+
 The **Keyboard Custom Container** is a reusable TouchGFX component designed
 to simplify virtual keyboard integration in embedded GUI applications.
 It provides a customizable, touch-friendly keyboard interface.
