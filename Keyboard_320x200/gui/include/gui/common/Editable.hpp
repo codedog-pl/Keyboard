@@ -4,12 +4,11 @@
  *
  * @brief       An editable text control abstraction wrapper. Header only class.
  *
- * @copyright   (c)2024 CodeDog, All rights reserved.
+ * @copyright   (c)2025 CodeDog, All rights reserved.
  */
 
 #pragma once
 
-#include "gui/common/FrontendApplication.hpp"
 #include "touchgfx/containers/Container.hpp"
 #include "touchgfx/widgets/Box.hpp"
 #include "touchgfx/containers/buttons/Buttons.hpp"
@@ -30,9 +29,10 @@ public:
     /// @brief Creates an editable control from a drawable element with a wildcard text buffer.
     /// @param drawable Drawable element reference.
     /// @param buffer Unicode text buffer address.
-    /// @param size Text buffer size.
-    Editable(Drawable& drawable, Unicode::UnicodeChar* buffer, size_t size)
-        : m_drawable(drawable), m_buffer(buffer), m_size(size) { }
+    /// @tparam T_SIZE Text buffer size in Unicode characters.
+    template<size_t T_SIZE>
+    Editable(Drawable& drawable, Unicode::UnicodeChar (&buffer)[T_SIZE])
+        : m_drawable(drawable), m_buffer(buffer), m_size(T_SIZE) { }
 
     /// @returns The base drawable element's reference.
     Drawable& drawable() { return m_drawable; }
@@ -75,18 +75,20 @@ public:
 
     /// @brief Sets this element's buffer with the UTF-8 text buffer content.
     /// @param buffer UTF-8 buffer pointer.
-    /// @param size UTF-8 buffer size.
-    void fromUTF8(void* buffer, size_t size) const
+    /// @tparam T_SIZE UTF-8 buffer size in bytes.
+    template<size_t T_SIZE>
+    void fromUTF8(char(&buffer)[T_SIZE]) const
     {
-        Unicode::fromUTF8(reinterpret_cast<uint8_t*>(buffer), m_buffer, static_cast<uint16_t>(size));
+        Unicode::fromUTF8(reinterpret_cast<uint8_t*>(buffer), m_buffer, static_cast<uint16_t>(T_SIZE));
     }
 
     /// @brief Fills the given UTF-8 text buffer with this element's text.
     /// @param buffer UTF-8 buffer pointer.
-    /// @param size UTF-8 buffer size.
-    void toUTF8(void* buffer, size_t size) const
+    /// @tparam T_SIZE UTF-8 buffer size in bytes.
+    template<size_t T_SIZE>
+    void toUTF8(char(&buffer)[T_SIZE]) const
     {
-        Unicode::toUTF8(m_buffer, reinterpret_cast<uint8_t*>(buffer), static_cast<uint16_t>(size));
+        Unicode::toUTF8(m_buffer, reinterpret_cast<uint8_t*>(buffer), static_cast<uint16_t>(T_SIZE));
     }
 
     /// @brief Gets the wildcard Unicode text buffer for a Flex Button with text.
