@@ -1,7 +1,7 @@
 # Keyboard Custom Container
 
-**Author**: Adam Łyskawa
-**Copyright**: ©2025 by [CodeDog](https://codedog.pl)
+**Author**: Adam Łyskawa  
+**Copyright**: ©2025 by [CodeDog](https://codedog.pl)  
 **License**: [The MIT License](https://opensource.org/license/mit)
 
 ---
