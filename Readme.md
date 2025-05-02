@@ -218,3 +218,89 @@ the demo, step by step.
     Visual Studio and will send the pressed keys to the
     console to test when and how it happens.
     
+  That's it. The presenter is not needed for this simple example.
+  It can be used however to copy edited lines to a buffer
+  that belongs to the application backend.
+  
+## How it works
+
+The main idea is to draw a keyboard that resembles the
+most standard QWERTY layout using default TouchGFX shapes
+and text, then make everything scale accordingly at the
+runtime.
+    
+Also at the runtime the accessible symbols can be switched
+using the `SHIFT` key.
+
+As this is a special full screen show on demand component,
+it's shown in the `Designer` as a mini-keyboard thumbnail,
+which is in fact the keyboard scaled to 320x200 resolution.
+
+When its view is initiated, it gets hidden before the first
+frame is drawn.
+
+Also, positions and sizes of all keys are calculated to match
+the current screen resolution.
+
+When the `edit` method is called, the keyboard copies the
+calling `Editable` pointer, also uses its metadata to get
+the text buffer and copy the text to it's internal `TextArea`.
+
+The cursor is set at the end of the existing text.
+
+The control is shown full screen and the cursor will blink.
+
+In this very basic version the cursor cannot be moved, but
+a backspace key can be pressed to delete existing characters.
+Hold the backspace pressed to delete the entire line.
+
+Now when the `Escape` key is pressed the control just hides,
+no changes made to the text are preserved.
+
+Also, the `canceled` event will be triggered, that can be bound
+in the `Interactions` panel of `TouchGFX Designer` and then
+handled with the code.
+
+When the `Enter` key is pressed the changes made to the text
+are copied to the original component that is referenced
+by the `Editable` instance. Naturally, the element is
+automatically invalidated and will redraw with its new
+content when the `Keyboard` is hidden / closed.
+
+Also, the `applied` event will be triggered, that can be bound
+in the `Interactions` panel of `TouchGFX Designer` and then
+handled with the code. It's the place in the code when the
+edited text change can be used with the application backend.
+
+For more details please kindly read the inline `Doxygen` documentation
+provided in the sources.
+
+The `Keyboard Custom Container` contains those main source files relative to the
+project root:
+
+- `gui/include/gui/common/Editable.hpp` - editable class (`Drawable` element wrapper),
+- `gui/include/gui/common/KeyboardColors.hpp` - color scheme for the keyboard,
+- `gui/include/gui/common/KeyboardLayout.hpp` - default keys layout definition,
+- `gui/include/gui/common/KeyboardKey.hpp` - keyboard key class (header only),
+- `gui/include/gui/containers/Keyboard.hpp` - keyboard component class header,
+- `gui/src/containers/Keyboard.cpp` - keyboard component class implementation.
+
+## Optional tools
+
+The entire code for this custom container and demos was made using
+`TouchGFX Designer` and `Microsoft Visual Studio Code`.
+As setting up the `VS Code` for the `C++` project might be tricky,
+the demos contain my configuration you can tweak to your preferences.
+
+## Modifying the sources
+
+The sources can be modified after the custom container is installed
+- in the main project.
+To make a package of the modified container it's best to modify
+the 1024x600 demo, then export the container as the `.tpkg` file.
+This is how this project was made.
+
+## Credits
+
+Developed by Adam Łyskawa for [CodeDog](https://www.codedog.pl).
+Content submission for TouchGFX Contest.
