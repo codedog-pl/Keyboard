@@ -2,7 +2,7 @@
 
 **Author**: Adam Łyskawa  
 **Copyright**: ©2025 by [CodeDog](https://codedog.pl)  
-**License**: [The MIT License](https://opensource.org/license/mit)
+**License**: [The MIT-0 License](https://opensource.org/license/mit-0)
 
 ---
 
